@@ -1,2 +1,4 @@
-# MySQL-DELIMITER
-Analysis of MySQL DELIMITER
+# MYSQL 定界符分析
+通过硬编码的方式实现多语句分割并且支持定界符。
+
+微信公众号：上下博客
