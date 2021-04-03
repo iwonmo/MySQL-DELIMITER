@@ -3,6 +3,23 @@
 
 微信公众号：上下博客
 
+```mysql
+SHOW DATABASES;
+CREATE USER name IDENTIFIED BY 'aaa"=bbb,ccc';
+SET PASSWORD FOR name=PASSWORD('fdddfd');
+SHOW GRANTS FOR name;
+GRANT SELECT ON db_name.* TO name;
+SHOW DATABASES;
+DELETE FROM tb_name WHERE id=3;
+DELIMITER $$
+CREATE PROCEDURE pro(
+    IN num INT,OUT total INT)
+    BEGIN
+    SELECT SUM(score) INTO total FROM tb_name WHERE id=num;
+    END$$
+DELIMITER ;
+DROP PROCEDURE pro;
+```
 ```javascript
 [
   [ 'SHOW', 4 ],          [ 'DATABASES', 14 ],  [ ';', 14 ],
